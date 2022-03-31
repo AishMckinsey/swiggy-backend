@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "23c3f45f-9de0-400c-a148-eb8f4301de31",
+		"name": "Swiggy System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "health",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/health",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"health"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "34"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"22-Cvjs3jxQffFy8pdYuQpxF1QM/yA\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 31 Mar 2022 11:45:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"message\": \"server is running!! \"\n}"
+				}
+			]
+		},
+		{
+			"name": "Resturant Options",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/swiggy/seeOptions",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"swiggy",
+						"seeOptions"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Resturant Options",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/swiggy/seeOptions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"swiggy",
+								"seeOptions"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "325"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"145-c400ciJ8tmRT7duqpKG5z+Hjng4\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 31 Mar 2022 11:44:49 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"getAllResturant\": [\n        {\n            \"id\": 1,\n            \"fullName\": \"Restaurant A\",\n            \"costForTwo\": 200,\n            \"Location\": \"Bangalore\"\n        },\n        {\n            \"id\": 2,\n            \"fullName\": \"Restaurant B\",\n            \"costForTwo\": 2000,\n            \"Location\": \"Bangalore\"\n        },\n        {\n            \"id\": 3,\n            \"fullName\": \"Restaurant C\",\n            \"costForTwo\": 1500,\n            \"Location\": \"Bangalore\"\n        },\n        {\n            \"id\": 4,\n            \"fullName\": \"Restaurant D\",\n            \"costForTwo\": 15000,\n            \"Location\": \"Bangalore\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "Get resturant by dish",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "Get resturant by dish",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/swiggy/searchOption/Soup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"swiggy",
+								"searchOption",
+								"Soup"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "98"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"62-q2DhcBrcvJKg8tay56wGfIyaSpQ\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 31 Mar 2022 16:01:00 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"resturantByDish\": [\n        {\n            \"id\": 10,\n            \"fullName\": \"Restaurant B\",\n            \"costForTwo\": 2000,\n            \"Location\": \"Bangalore\"\n        }\n    ]\n}"
+				}
+			]
+		},
+		{
+			"name": "see menu",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/swiggy/seeOptions/9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"swiggy",
+						"seeOptions",
+						"9"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/swiggy/seeOptions/10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"swiggy",
+								"seeOptions",
+								"10"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "159"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"9f-O+CcgIoKSkOILULktr0/Juhbwog\""
+						},
+						{
+							"key": "Date",
+							"value": "Thu, 31 Mar 2022 14:04:45 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"getResturant\": [\n        {\n            \"name\": \"Veg Sandwich\",\n            \"price\": 100,\n            \"rating\": 5\n        },\n        {\n            \"name\": \"Veg Burger\",\n            \"price\": 100,\n            \"rating\": 5\n        },\n        {\n            \"name\": \"Chicken Burger\",\n            \"price\": 150,\n            \"rating\": 4\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
