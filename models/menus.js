@@ -11,8 +11,8 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
 
       Menus.belongsTo(Resturants, {
-        foreignKey: "resturant_id",
         onDelete: "cascade",
+        foreignKey: "resturant_id",
       });
     }
   }
